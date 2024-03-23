@@ -6,11 +6,14 @@
         <action_template/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>e37b7170879406506c60a9383cbb355c</copied_from>
         <copied_from_name>Copy of REST call to GPT</copied_from_name>
         <description>make a REST call to ChatGPT</description>
+        <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>summarize</internal_name>
         <label_cache>[{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.input}}","label":"action➛input","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[0fa3aa73-956b-48c5-a237-134560da8d20].root.choices}}","label":"step➛JSON Parser step➛root➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0fa3aa73-956b-48c5-a237-134560da8d20].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79a424529864e9101de4cfd32da6c3c1","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"49ff6f39-d69d-4bb0-85ed-681a2cfff9a4"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3ad7c31e-f1f7-4247-b37f-741fb4f1cc7e].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ad7c31e-f1f7-4247-b37f-741fb4f1cc7e].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[afe925df-04ff-4d66-b2e6-b5bf9c49e774].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDce1ed6742cb1611040fa1b357fe4231f","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f7d3d938-712f-43c7-93eb-dbaa824b1803"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root.response}}","label":"step➛JSON Parser step➛root➛response","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root.response.choices}}","label":"step➛JSON Parser step➛root➛response➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].variable}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].sa}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].sanitised_prompt}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].clean_prompt}}","label":"step➛Sanitise Prompt➛Clean Prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"2bee04a0-9229-4aa1-8732-3eab2d3c4da4"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].__step_status__.code}}","label":"step➛REST step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[711738ca-dabf-4512-b260-830c1efae2d8].content}}","label":"step➛Script step➛content","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].root.choices}}","label":"step➛JSON Parser step➛root➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
@@ -27,15 +30,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>556bde75871806506c60a9383cbb3563</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Genpact Summarize</sys_name>
         <sys_overrides/>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_556bde75871806506c60a9383cbb3563</sys_update_name>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:37</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-23 09:57:11</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -204,18 +207,6 @@ if (inputs.status_code == '200'){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=148d92f5875806506c60a9383cbb359d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>148d92f5875806506c60a9383cbb359d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:40:54</sys_created_on>
-        <sys_id>508d92f5875806506c60a9383cbb35c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:40:54</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response_body</field>
         <id>148d92f5875806506c60a9383cbb359d</id>
         <sys_created_by>850063547</sys_created_by>
@@ -226,18 +217,6 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-12 12:40:54</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_148d92f5875806506c60a9383cbb359d</table>
         <value>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>148d92f5875806506c60a9383cbb359d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:40:54</sys_created_on>
-        <sys_id>188d92f5875806506c60a9383cbb35c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:40:54</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status_code</field>
@@ -253,6 +232,7 @@ if (inputs.status_code == '200'){&#13;
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_148d92f5875806506c60a9383cbb359d^id=148d92f5875806506c60a9383cbb359d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=148d92f5875806506c60a9383cbb359d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=148d92f5875806506c60a9383cbb359d"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=148d92f5875806506c60a9383cbb359d^sys_idNOT IN108d92f5875806506c60a9383cbb35bd,dc8d92f5875806506c60a9383cbb35a0"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -519,11 +499,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:40:53</sys_created_on>
         <sys_id>d88d92f5875806506c60a9383cbb35c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>content</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_148d92f5875806506c60a9383cbb359d_content_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:40:53</sys_updated_on>
         <url/>
@@ -537,12 +517,11 @@ if (inputs.status_code == '200'){&#13;
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <inputs/>
         <label>JSON Parser step</label>
         <order>3</order>
         <outputs/>
         <section/>
-        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <step_type display_value="">502328c387523300f917e55936cb0bf0</step_type>
         <sys_created_by>850063547</sys_created_by>
         <sys_created_on>2024-02-12 12:31:42</sys_created_on>
         <sys_id>2d6bde75871806506c60a9383cbb35de</sys_id>
@@ -625,7 +604,7 @@ if (inputs.status_code == '200'){&#13;
         "total_tokens": 143
     }
 }</value>
-        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -639,48 +618,35 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
         <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"chatcmpl-8qI8SqbS5tVJChdrnPLQWldM5PPG6"},{"name":"object","children":[],"type":"string","jpath":"$.object","previewValue":"chat.completion"},{"name":"created","children":[],"type":"string","jpath":"$.created","previewValue":"1707473460"},{"name":"model","children":[],"type":"string","jpath":"$.model","previewValue":"gpt-35-turbo"},{"name":"prompt_filter_results","children":[{"name":"prompt_filter_results_object","children":[{"name":"prompt_index","children":[],"type":"string","jpath":"$.prompt_filter_results[*].prompt_index","previewValue":"0"},{"name":"content_filter_results","children":[{"name":"hate","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.hate.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.hate.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.hate","previewValue":""},{"name":"self_harm","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm","previewValue":""},{"name":"sexual","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.sexual.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.sexual.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.sexual","previewValue":""},{"name":"violence","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.violence.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.violence.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.violence","previewValue":""}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results","previewValue":""}],"type":"object","jpath":"$.prompt_filter_results[*]","previewValue":""}],"type":"array.object","jpath":"$.prompt_filter_results[*]","previewValue":""},{"name":"choices","children":[{"name":"choices_object","children":[{"name":"finish_reason","children":[],"type":"string","jpath":"$.choices[*].finish_reason","previewValue":"stop"},{"name":"index","children":[],"type":"string","jpath":"$.choices[*].index","previewValue":"0"},{"name":"message","children":[{"name":"role","children":[],"type":"string","jpath":"$.choices[*].message.role","previewValue":"assistant"},{"name":"content","children":[],"type":"string","jpath":"$.choices[*].message.content","previewValue":"\n\nVPN Connection Issues\n\nIf you are having difficulty connecting to your VPN, there are several troubleshooting steps that you can take.\n\n1. Verify the VPN connection settings: First, make sure you have the correct settings configured in your VPN client. Examples of correct settings might include the correct VPN server address, username and password, encryption protocol and port.\n\n2. Check your connection: Ensuring you have an active Internet connection is the first step in troubleshooting a VPN connection issue. If you are experiencing slow speeds, poor performance or issues connecting to the web, the issue may lie with your Internet connection.\n\n3.Disable any firewalls: Firewalls can prevent your VPN from establishing a connection. Make sure you have disabled any network settings such as Windows Firewall that could be blocking the connection.\n\n4. Troubleshoot Windows Network Connections: If you are using Windows, you can use the Network Connection Troubleshooting tool to identify and fix any issues related to your VPN connection.\n\n5. Contact your VPN provider: If none of these steps have resolved the issue, contact your VPN provider. They can help you identify the cause of the problem and assist you in resolving it."}],"type":"object","jpath":"$.choices[*].message","previewValue":""},{"name":"content_filter_results","children":[{"name":"hate","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.hate.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.hate.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.hate","previewValue":""},{"name":"self_harm","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.self_harm.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.self_harm.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.self_harm","previewValue":""},{"name":"sexual","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.sexual.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.sexual.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.sexual","previewValue":""},{"name":"violence","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.violence.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.violence.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.violence","previewValue":""}],"type":"object","jpath":"$.choices[*].content_filter_results","previewValue":""}],"type":"object","jpath":"$.choices[*]","previewValue":""}],"type":"array.object","jpath":"$.choices[*]","previewValue":""},{"name":"usage","children":[{"name":"prompt_tokens","children":[],"type":"string","jpath":"$.usage.prompt_tokens","previewValue":"12"},{"name":"completion_tokens","children":[],"type":"string","jpath":"$.usage.completion_tokens","previewValue":"131"},{"name":"total_tokens","children":[],"type":"string","jpath":"$.usage.total_tokens","previewValue":"143"}],"type":"object","jpath":"$.usage","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
-        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2d6bde75871806506c60a9383cbb35de^id=2d6bde75871806506c60a9383cbb35de"/>
-    <sys_element_mapping action="delete_multiple" query="id=2d6bde75871806506c60a9383cbb35de"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sample_payload</field>
-        <id>2d6bde75871806506c60a9383cbb35de</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:31:42</sys_created_on>
-        <sys_id>256bde75871806506c60a9383cbb35f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>source_data</field>
-        <id>2d6bde75871806506c60a9383cbb35de</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:31:42</sys_created_on>
-        <sys_id>ad6bde75871806506c60a9383cbb35f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_schema</field>
-        <id>2d6bde75871806506c60a9383cbb35de</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:31:42</sys_created_on>
-        <sys_id>616bde75871806506c60a9383cbb35f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value/>
-    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d6bde75871806506c60a9383cbb35de"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=2d6bde75871806506c60a9383cbb35de"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=2d6bde75871806506c60a9383cbb35de^sys_idNOT INad6bde75871806506c60a9383cbb35e4"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe56bde75f9180650f015c2504acd53e1</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fad7127187d406506c60a9383cbb35dc</scope_name>
+        <serialized_content>{"FlowDesigner:FDe56bde75f9180650f015c2504acd53e1":{"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"299d4cda-f012-4bb5-bd9d-133e5da6dba2\"}"},"prompt_filter_results":[{"$12_prompt_filter_results":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"389af5cc-f34e-40a6-a954-165fc196db43\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e56fea53-3f0f-4814-9f74-1b7a211ae258\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a14dd686-4249-4639-b5a7-ba8eb1c5697c\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"af15752b-476f-475b-a74c-c858386d3129\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d8ef01cd-4198-4504-9a68-d5d654f030d5\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b74945c-d798-4330-b031-7e6f855255e9\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d7fdaa82-7276-4df6-93f4-15404c5af52c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"139c8023-6941-4ac0-840c-f777e543ee85\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f9d8906b-4420-4da3-a786-850c8a681c69\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8528c4f3-dab8-4f59-b0b9-43dd3dfde460\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb614159-b166-4ad7-9541-f16c59f559c5\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a3d1b21a-7788-4192-8842-1c530ad41728\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8e2c2b04-bce2-4a46-8474-939832feac25\"}"},"prompt_index":"String","prompt_index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"prompt_index\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fe0d724c-22be-434e-abc9-37b3d6670341\"}"}}}],"prompt_filter_results.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"prompt_filter_results\",\"mandatory\":\"false\",\"child_name\":\"prompt_filter_results_object\",\"uiUniqueId\":\"6cc207d3-cd73-4f3f-80e2-8ca87078f29e\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"prompt_filter_results_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e339b3e0-481a-4480-a5cb-67bfbb2c96b7\"}"},"usage":{"completion_tokens":"String","completion_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"completion_tokens\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e19936ef-6094-4095-a56e-bbb5337b626b\"}"},"prompt_tokens":"String","prompt_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"prompt_tokens\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"0d6816ed-dd3e-4bf5-b5aa-7a13f6d91cba\"}"},"total_tokens":"String","total_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"total_tokens\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"00e9ada1-ff0b-479b-8558-85645b6c0205\"}"}},"usage.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"usage\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"cd6662eb-4040-48f8-9ab7-869eae31c25b\"}"},"model":"String","model.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"model\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"6388b505-e777-4fe5-997c-57c6c2474ff7\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3d919ba8-3234-43aa-a95a-a033a891baf0\"}"},"choices":[{"$6_choices":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3e39fa72-ced6-4af2-a3f9-59855b601c5c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7230c65e-fb16-4d48-a67d-a1568c6f67eb\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f052f1-bd8a-47a4-b831-3e6324b03e42\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8f3c7a45-0e7c-4a11-9ffb-d40da40917ec\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf3e5348-b000-4b1c-985e-ae07d656e1d6\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb816633-2bd5-47b0-ab46-8e9192f50ccf\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ae582cca-2721-4827-afac-e90c787a9931\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8ff5ed3c-bb28-4789-99f4-9943b124f651\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4784d6a2-e80f-4899-801b-98233c0f767e\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"4b2ae181-af39-4734-b1b6-d2782657ab71\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b562917-9773-452e-bd72-e77add41e6b9\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"17cd0b72-d2fa-48b9-94f3-6bac3dd6b68d\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"350895dd-505d-446a-bffe-29ead0ae1c47\"}"},"finish_reason":"String","finish_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"finish_reason\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"21b9b4b8-b9af-4653-a183-c9c58f103188\"}"},"index":"String","index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"index\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"34c7de03-0e45-4e75-9be9-8c9030b58ce6\"}"},"message":{"role":"String","role.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"role\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"947ae4ed-865c-443b-b0c3-5986ab9e4872\"}"},"content":"String","content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"content\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1d7cc613-1389-4eac-aa1e-8b4a9e0698e0\"}"}},"message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f408f70c-5352-4122-8a7d-2b78923d42e8\"}"}}}],"choices.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"choices\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"},"object":"String","object.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"object\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"fc0149b6-29ce-4db8-8d0f-97bc095316e8\"}"}},"FlowDesigner:FDe56bde75f9180650f015c2504acd53e1.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"a5420f28-ac22-43c6-a246-f3b70cda1013\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe56bde75f9180650f015c2504acd53e1\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>850063547</sys_created_by>
+        <sys_created_on>2024-02-12 12:31:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a96bde75871806506c60a9383cbb35e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>850063547</sys_updated_by>
+        <sys_updated_on>2024-02-12 12:40:53</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -779,11 +745,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:42</sys_created_on>
         <sys_id>e16bde75871806506c60a9383cbb35f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>root</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_2d6bde75871806506c60a9383cbb35de_root_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
         <url/>
@@ -858,18 +824,6 @@ if (inputs.status_code == '200'){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=516bde75871806506c60a9383cbb357d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>516bde75871806506c60a9383cbb357d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:31:41</sys_created_on>
-        <sys_id>a56bde75871806506c60a9383cbb3599</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:31:41</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>dirtyPrompt</field>
         <id>516bde75871806506c60a9383cbb357d</id>
         <sys_created_by>850063547</sys_created_by>
@@ -881,20 +835,9 @@ if (inputs.status_code == '200'){&#13;
         <table>var__m_sys_hub_step_ext_input_516bde75871806506c60a9383cbb357d</table>
         <value>{{action.prompt}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>516bde75871806506c60a9383cbb357d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-12 12:31:41</sys_created_on>
-        <sys_id>6d6bde75871806506c60a9383cbb3599</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-12 12:31:41</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_516bde75871806506c60a9383cbb357d^id=516bde75871806506c60a9383cbb357d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=516bde75871806506c60a9383cbb357d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=516bde75871806506c60a9383cbb357d"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=516bde75871806506c60a9383cbb357d^sys_idNOT IN2d6bde75871806506c60a9383cbb3580"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1078,11 +1021,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:41</sys_created_on>
         <sys_id>a16bde75871806506c60a9383cbb3595</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Clean Prompt</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_516bde75871806506c60a9383cbb357d_clean_prompt_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:41</sys_updated_on>
         <url/>
@@ -1437,6 +1380,7 @@ if (inputs.status_code == '200'){&#13;
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=616bde75871806506c60a9383cbb35b7"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=616bde75871806506c60a9383cbb35b7"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=616bde75871806506c60a9383cbb35b7^sys_idNOT INe96bde75871806506c60a9383cbb35be"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1550,11 +1494,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:41</sys_created_on>
         <sys_id>696bde75871806506c60a9383cbb35c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_616bde75871806506c60a9383cbb35b7_sn_auth_token_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:41</sys_updated_on>
         <url/>
@@ -1646,6 +1590,29 @@ if (inputs.status_code == '200'){&#13;
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd6bde75871806506c60a9383cbb3576"/>
     <sys_hub_action_output action="delete_multiple" query="model=556bde75871806506c60a9383cbb3563^sys_idNOT IN2658a679875c06506c60a9383cbb355a,756b12b5871806506c60a9383cbb3504,908d92f5875806506c60a9383cbb35dc,fd6b12b5871806506c60a9383cbb3507"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDa658a679925c06509b1e9869bcb98a51</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fad7127187d406506c60a9383cbb35dc</scope_name>
+        <serialized_content>{"FlowDesigner:FDa658a679925c06509b1e9869bcb98a51":{"$COCollectionField":[{"choices_object":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3e39fa72-ced6-4af2-a3f9-59855b601c5c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7230c65e-fb16-4d48-a67d-a1568c6f67eb\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f052f1-bd8a-47a4-b831-3e6324b03e42\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8f3c7a45-0e7c-4a11-9ffb-d40da40917ec\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf3e5348-b000-4b1c-985e-ae07d656e1d6\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb816633-2bd5-47b0-ab46-8e9192f50ccf\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ae582cca-2721-4827-afac-e90c787a9931\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8ff5ed3c-bb28-4789-99f4-9943b124f651\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4784d6a2-e80f-4899-801b-98233c0f767e\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"4b2ae181-af39-4734-b1b6-d2782657ab71\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b562917-9773-452e-bd72-e77add41e6b9\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"17cd0b72-d2fa-48b9-94f3-6bac3dd6b68d\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"350895dd-505d-446a-bffe-29ead0ae1c47\"}"},"finish_reason":"String","finish_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"finish_reason\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"21b9b4b8-b9af-4653-a183-c9c58f103188\"}"},"index":"String","index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"index\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"34c7de03-0e45-4e75-9be9-8c9030b58ce6\"}"},"message":{"role":"String","role.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"role\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"947ae4ed-865c-443b-b0c3-5986ab9e4872\"}"},"content":"String","content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"content\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1d7cc613-1389-4eac-aa1e-8b4a9e0698e0\"}"}},"message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f408f70c-5352-4122-8a7d-2b78923d42e8\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"769baac3-3b19-4709-9a22-747d94db604c\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"chocies\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"6846b88c-465b-4baa-b98f-74cd331ddcdb\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDa658a679925c06509b1e9869bcb98a51\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDa658a679925c06509b1e9869bcb98a51.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"769baac3-3b19-4709-9a22-747d94db604c\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"chocies\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"6846b88c-465b-4baa-b98f-74cd331ddcdb\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDa658a679925c06509b1e9869bcb98a51\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>850063547</sys_created_by>
+        <sys_created_on>2024-02-12 13:28:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a58a679875c06506c60a9383cbb3551</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>850063547</sys_updated_by>
+        <sys_updated_on>2024-02-19 12:26:31</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1733,6 +1700,29 @@ if (inputs.status_code == '200'){&#13;
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2658a679875c06506c60a9383cbb355a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2658a679875c06506c60a9383cbb355a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf96bde759c18065050c46a3c9ae651fc</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fad7127187d406506c60a9383cbb35dc</scope_name>
+        <serialized_content>{"FlowDesigner:FDf96bde759c18065050c46a3c9ae651fc":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf96bde759c18065050c46a3c9ae651fc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"95b95c8c-f41b-4e81-a0fa-a75630869218\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf96bde759c18065050c46a3c9ae651fc\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>850063547</sys_created_by>
+        <sys_created_on>2024-02-12 12:31:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd6bde75871806506c60a9383cbb35fc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>850063547</sys_updated_by>
+        <sys_updated_on>2024-02-12 13:28:17</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2041,7 +2031,7 @@ if (inputs.status_code == '200'){&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=716b12b5871806506c60a9383cbb3546^sys_idNOT IN316b12b5871806506c60a9383cbb3547,396b12b5871806506c60a9383cbb3546,bd6b12b5871806506c60a9383cbb3546"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-12 06:01:42 PM">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-12 04:31:42">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=1^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=429</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>OpenAI API quota exceeded</label>
@@ -2055,7 +2045,7 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-19 12:26:31</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-12 06:01:42 PM">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-12 04:31:42">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=1^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=400</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>tokens exceeded</label>
@@ -2069,7 +2059,7 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-19 12:26:31</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-12 06:01:42 PM">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-12 04:31:42">716b12b5871806506c60a9383cbb3546</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=3^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=401</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>no API key provided</label>
@@ -2096,11 +2086,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:41</sys_created_on>
         <sys_id>9d6bde75871806506c60a9383cbb357a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>prompt</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_556bde75871806506c60a9383cbb3563_prompt_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:41</sys_updated_on>
         <url/>
@@ -2121,11 +2111,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 13:28:17</sys_created_on>
         <sys_id>2a58a679875c06506c60a9383cbb356a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>chocies</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_556bde75871806506c60a9383cbb3563_variable_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 13:28:17</sys_updated_on>
         <url/>
@@ -2144,11 +2134,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:42</sys_created_on>
         <sys_id>316b12b5871806506c60a9383cbb3507</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_556bde75871806506c60a9383cbb3563___action_status___en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
         <url/>
@@ -2167,11 +2157,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:40:54</sys_created_on>
         <sys_id>9c8d92f5875806506c60a9383cbb35df</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_556bde75871806506c60a9383cbb3563_response_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:40:54</sys_updated_on>
         <url/>
@@ -2190,11 +2180,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-12 12:31:42</sys_created_on>
         <sys_id>b96b12b5871806506c60a9383cbb353e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_556bde75871806506c60a9383cbb3563___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-12 12:31:42</sys_updated_on>
         <url/>
@@ -2223,11 +2213,14 @@ if (inputs.status_code == '200'){&#13;
         <action_status/>
         <action_template/>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>e37b7170879406506c60a9383cbb355c</copied_from>
         <copied_from_name/>
         <description>make a REST call to ChatGPT</description>
+        <flow_priority/>
         <internal_name>genpact_summarize</internal_name>
         <label_cache>[{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.input}}","label":"action➛input","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[0fa3aa73-956b-48c5-a237-134560da8d20].root.choices}}","label":"step➛JSON Parser step➛root➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0fa3aa73-956b-48c5-a237-134560da8d20].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79a424529864e9101de4cfd32da6c3c1","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"49ff6f39-d69d-4bb0-85ed-681a2cfff9a4"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2099c87d-1880-4e38-af14-105f818cafa5].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3ad7c31e-f1f7-4247-b37f-741fb4f1cc7e].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ad7c31e-f1f7-4247-b37f-741fb4f1cc7e].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[afe925df-04ff-4d66-b2e6-b5bf9c49e774].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDce1ed6742cb1611040fa1b357fe4231f","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f7d3d938-712f-43c7-93eb-dbaa824b1803"}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root.response}}","label":"step➛JSON Parser step➛root➛response","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[54ee0363-3d30-4213-b9a5-dc35a4d70e82].root.response.choices}}","label":"step➛JSON Parser step➛root➛response➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].variable}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].sa}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].sanitised_prompt}}","label":"step➛Sanitise Prompt➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a413a17b-5124-4476-a7d1-656f224d5d01].clean_prompt}}","label":"step➛Sanitise Prompt➛Clean Prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"2bee04a0-9229-4aa1-8732-3eab2d3c4da4"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].__step_status__.code}}","label":"step➛JSON Parser step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[17ca3925-230d-4c66-a94f-74f21eec9394].__step_status__.code}}","label":"step➛REST step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[711738ca-dabf-4512-b260-830c1efae2d8].content}}","label":"step➛Script step➛content","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[769baac3-3b19-4709-9a22-747d94db604c].root.choices}}","label":"step➛JSON Parser step➛root➛choices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
@@ -2342,12 +2335,11 @@ if (inputs.status_code == '200'){&#13;
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <inputs/>
         <label>JSON Parser step</label>
         <order>3</order>
         <outputs/>
         <section/>
-        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <step_type display_value="">502328c387523300f917e55936cb0bf0</step_type>
         <sys_created_by>850063547</sys_created_by>
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>397ce64087648e10a3bb8776cebb357d</sys_id>
@@ -2369,7 +2361,7 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <value>{"name":"root","children":[{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"chatcmpl-8qI8SqbS5tVJChdrnPLQWldM5PPG6"},{"name":"object","children":[],"type":"string","jpath":"$.object","previewValue":"chat.completion"},{"name":"created","children":[],"type":"string","jpath":"$.created","previewValue":"1707473460"},{"name":"model","children":[],"type":"string","jpath":"$.model","previewValue":"gpt-35-turbo"},{"name":"prompt_filter_results","children":[{"name":"prompt_filter_results_object","children":[{"name":"prompt_index","children":[],"type":"string","jpath":"$.prompt_filter_results[*].prompt_index","previewValue":"0"},{"name":"content_filter_results","children":[{"name":"hate","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.hate.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.hate.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.hate","previewValue":""},{"name":"self_harm","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.self_harm","previewValue":""},{"name":"sexual","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.sexual.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.sexual.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.sexual","previewValue":""},{"name":"violence","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.violence.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.prompt_filter_results[*].content_filter_results.violence.severity","previewValue":"safe"}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results.violence","previewValue":""}],"type":"object","jpath":"$.prompt_filter_results[*].content_filter_results","previewValue":""}],"type":"object","jpath":"$.prompt_filter_results[*]","previewValue":""}],"type":"array.object","jpath":"$.prompt_filter_results[*]","previewValue":""},{"name":"choices","children":[{"name":"choices_object","children":[{"name":"finish_reason","children":[],"type":"string","jpath":"$.choices[*].finish_reason","previewValue":"stop"},{"name":"index","children":[],"type":"string","jpath":"$.choices[*].index","previewValue":"0"},{"name":"message","children":[{"name":"role","children":[],"type":"string","jpath":"$.choices[*].message.role","previewValue":"assistant"},{"name":"content","children":[],"type":"string","jpath":"$.choices[*].message.content","previewValue":"\n\nVPN Connection Issues\n\nIf you are having difficulty connecting to your VPN, there are several troubleshooting steps that you can take.\n\n1. Verify the VPN connection settings: First, make sure you have the correct settings configured in your VPN client. Examples of correct settings might include the correct VPN server address, username and password, encryption protocol and port.\n\n2. Check your connection: Ensuring you have an active Internet connection is the first step in troubleshooting a VPN connection issue. If you are experiencing slow speeds, poor performance or issues connecting to the web, the issue may lie with your Internet connection.\n\n3.Disable any firewalls: Firewalls can prevent your VPN from establishing a connection. Make sure you have disabled any network settings such as Windows Firewall that could be blocking the connection.\n\n4. Troubleshoot Windows Network Connections: If you are using Windows, you can use the Network Connection Troubleshooting tool to identify and fix any issues related to your VPN connection.\n\n5. Contact your VPN provider: If none of these steps have resolved the issue, contact your VPN provider. They can help you identify the cause of the problem and assist you in resolving it."}],"type":"object","jpath":"$.choices[*].message","previewValue":""},{"name":"content_filter_results","children":[{"name":"hate","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.hate.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.hate.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.hate","previewValue":""},{"name":"self_harm","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.self_harm.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.self_harm.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.self_harm","previewValue":""},{"name":"sexual","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.sexual.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.sexual.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.sexual","previewValue":""},{"name":"violence","children":[{"name":"filtered","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.violence.filtered","previewValue":"false"},{"name":"severity","children":[],"type":"string","jpath":"$.choices[*].content_filter_results.violence.severity","previewValue":"safe"}],"type":"object","jpath":"$.choices[*].content_filter_results.violence","previewValue":""}],"type":"object","jpath":"$.choices[*].content_filter_results","previewValue":""}],"type":"object","jpath":"$.choices[*]","previewValue":""}],"type":"array.object","jpath":"$.choices[*]","previewValue":""},{"name":"usage","children":[{"name":"prompt_tokens","children":[],"type":"string","jpath":"$.usage.prompt_tokens","previewValue":"12"},{"name":"completion_tokens","children":[],"type":"string","jpath":"$.usage.completion_tokens","previewValue":"131"},{"name":"total_tokens","children":[],"type":"string","jpath":"$.usage.total_tokens","previewValue":"143"}],"type":"object","jpath":"$.usage","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
-        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+        <variable display_value="">4674240787523300f917e55936cb0b0e</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -2444,48 +2436,35 @@ if (inputs.status_code == '200'){&#13;
         "total_tokens": 143
     }
 }</value>
-        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+        <variable display_value="">d335ac0787523300f917e55936cb0b1d</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_397ce64087648e10a3bb8776cebb357d^id=397ce64087648e10a3bb8776cebb357d"/>
-    <sys_element_mapping action="delete_multiple" query="id=397ce64087648e10a3bb8776cebb357d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sample_payload</field>
-        <id>397ce64087648e10a3bb8776cebb357d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
-        <sys_id>b57ce64087648e10a3bb8776cebb358a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>source_data</field>
-        <id>397ce64087648e10a3bb8776cebb357d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
-        <sys_id>317ce64087648e10a3bb8776cebb358a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_schema</field>
-        <id>397ce64087648e10a3bb8776cebb357d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
-        <sys_id>f17ce64087648e10a3bb8776cebb358a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
-        <value/>
-    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=397ce64087648e10a3bb8776cebb357d"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=397ce64087648e10a3bb8776cebb357d"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=397ce64087648e10a3bb8776cebb357d^sys_idNOT INb17ce64087648e10a3bb8776cebb3584"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf17ce64067648e10f67dd038c48ed680</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fad7127187d406506c60a9383cbb35dc</scope_name>
+        <serialized_content>{"FlowDesigner:FDf17ce64067648e10f67dd038c48ed680":{"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"299d4cda-f012-4bb5-bd9d-133e5da6dba2\"}"},"prompt_filter_results":[{"$12_prompt_filter_results":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"389af5cc-f34e-40a6-a954-165fc196db43\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e56fea53-3f0f-4814-9f74-1b7a211ae258\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a14dd686-4249-4639-b5a7-ba8eb1c5697c\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"af15752b-476f-475b-a74c-c858386d3129\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d8ef01cd-4198-4504-9a68-d5d654f030d5\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b74945c-d798-4330-b031-7e6f855255e9\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d7fdaa82-7276-4df6-93f4-15404c5af52c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"139c8023-6941-4ac0-840c-f777e543ee85\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f9d8906b-4420-4da3-a786-850c8a681c69\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8528c4f3-dab8-4f59-b0b9-43dd3dfde460\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb614159-b166-4ad7-9541-f16c59f559c5\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a3d1b21a-7788-4192-8842-1c530ad41728\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8e2c2b04-bce2-4a46-8474-939832feac25\"}"},"prompt_index":"String","prompt_index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"prompt_index\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fe0d724c-22be-434e-abc9-37b3d6670341\"}"}}}],"prompt_filter_results.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"prompt_filter_results\",\"mandatory\":\"false\",\"child_name\":\"prompt_filter_results_object\",\"uiUniqueId\":\"6cc207d3-cd73-4f3f-80e2-8ca87078f29e\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"prompt_filter_results_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e339b3e0-481a-4480-a5cb-67bfbb2c96b7\"}"},"usage":{"completion_tokens":"String","completion_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"completion_tokens\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e19936ef-6094-4095-a56e-bbb5337b626b\"}"},"prompt_tokens":"String","prompt_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"prompt_tokens\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"0d6816ed-dd3e-4bf5-b5aa-7a13f6d91cba\"}"},"total_tokens":"String","total_tokens.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"total_tokens\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"00e9ada1-ff0b-479b-8558-85645b6c0205\"}"}},"usage.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"usage\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"cd6662eb-4040-48f8-9ab7-869eae31c25b\"}"},"model":"String","model.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"model\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"6388b505-e777-4fe5-997c-57c6c2474ff7\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3d919ba8-3234-43aa-a95a-a033a891baf0\"}"},"choices":[{"$6_choices":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3e39fa72-ced6-4af2-a3f9-59855b601c5c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7230c65e-fb16-4d48-a67d-a1568c6f67eb\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f052f1-bd8a-47a4-b831-3e6324b03e42\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8f3c7a45-0e7c-4a11-9ffb-d40da40917ec\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf3e5348-b000-4b1c-985e-ae07d656e1d6\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb816633-2bd5-47b0-ab46-8e9192f50ccf\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ae582cca-2721-4827-afac-e90c787a9931\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8ff5ed3c-bb28-4789-99f4-9943b124f651\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4784d6a2-e80f-4899-801b-98233c0f767e\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"4b2ae181-af39-4734-b1b6-d2782657ab71\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b562917-9773-452e-bd72-e77add41e6b9\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"17cd0b72-d2fa-48b9-94f3-6bac3dd6b68d\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"350895dd-505d-446a-bffe-29ead0ae1c47\"}"},"finish_reason":"String","finish_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"finish_reason\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"21b9b4b8-b9af-4653-a183-c9c58f103188\"}"},"index":"String","index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"index\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"34c7de03-0e45-4e75-9be9-8c9030b58ce6\"}"},"message":{"role":"String","role.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"role\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"947ae4ed-865c-443b-b0c3-5986ab9e4872\"}"},"content":"String","content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"content\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1d7cc613-1389-4eac-aa1e-8b4a9e0698e0\"}"}},"message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f408f70c-5352-4122-8a7d-2b78923d42e8\"}"}}}],"choices.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"choices\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"6\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"},"object":"String","object.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"object\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"fc0149b6-29ce-4db8-8d0f-97bc095316e8\"}"}},"FlowDesigner:FDf17ce64067648e10f67dd038c48ed680.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf17ce64067648e10f67dd038c48ed680\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"a5420f28-ac22-43c6-a246-f3b70cda1013\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>850063547</sys_created_by>
+        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b57ce64087648e10a3bb8776cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>850063547</sys_updated_by>
+        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2584,11 +2563,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>757ce64087648e10a3bb8776cebb3587</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>root</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_397ce64087648e10a3bb8776cebb357d_root_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
@@ -2667,18 +2646,6 @@ if (inputs.status_code == '200'){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=717ce64087648e10a3bb8776cebb358d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>717ce64087648e10a3bb8776cebb358d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
-        <sys_id>797ce64087648e10a3bb8776cebb35ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response_body</field>
         <id>717ce64087648e10a3bb8776cebb358d</id>
         <sys_created_by>850063547</sys_created_by>
@@ -2689,18 +2656,6 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_717ce64087648e10a3bb8776cebb358d</table>
         <value>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>717ce64087648e10a3bb8776cebb358d</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
-        <sys_id>3d7ce64087648e10a3bb8776cebb35ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status_code</field>
@@ -2716,6 +2671,7 @@ if (inputs.status_code == '200'){&#13;
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_717ce64087648e10a3bb8776cebb358d^id=717ce64087648e10a3bb8776cebb358d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=717ce64087648e10a3bb8776cebb358d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=717ce64087648e10a3bb8776cebb358d"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=717ce64087648e10a3bb8776cebb358d^sys_idNOT IN397ce64087648e10a3bb8776cebb3590,fd7ce64087648e10a3bb8776cebb35a0"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2982,11 +2938,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>bd7ce64087648e10a3bb8776cebb35a7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>content</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_717ce64087648e10a3bb8776cebb358d_content_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
@@ -3061,18 +3017,6 @@ if (inputs.status_code == '200'){&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ed7ce64087648e10a3bb8776cebb354c"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>ed7ce64087648e10a3bb8776cebb354c</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:35</sys_created_on>
-        <sys_id>f17ce64087648e10a3bb8776cebb355d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>dirtyPrompt</field>
         <id>ed7ce64087648e10a3bb8776cebb354c</id>
         <sys_created_by>850063547</sys_created_by>
@@ -3084,20 +3028,9 @@ if (inputs.status_code == '200'){&#13;
         <table>var__m_sys_hub_step_ext_input_ed7ce64087648e10a3bb8776cebb354c</table>
         <value>{{action.prompt}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>ed7ce64087648e10a3bb8776cebb354c</id>
-        <sys_created_by>850063547</sys_created_by>
-        <sys_created_on>2024-02-19 13:32:35</sys_created_on>
-        <sys_id>b97ce64087648e10a3bb8776cebb355d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>850063547</sys_updated_by>
-        <sys_updated_on>2024-02-19 13:32:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ed7ce64087648e10a3bb8776cebb354c^id=ed7ce64087648e10a3bb8776cebb354c"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=ed7ce64087648e10a3bb8776cebb354c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed7ce64087648e10a3bb8776cebb354c"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=ed7ce64087648e10a3bb8776cebb354c^sys_idNOT INa97ce64087648e10a3bb8776cebb3550"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -3281,11 +3214,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:35</sys_created_on>
         <sys_id>617ce64087648e10a3bb8776cebb3559</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Clean Prompt</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_ed7ce64087648e10a3bb8776cebb354c_clean_prompt_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:35</sys_updated_on>
         <url/>
@@ -3640,6 +3573,7 @@ if (inputs.status_code == '200'){&#13;
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=fd7ce64087648e10a3bb8776cebb3561"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=fd7ce64087648e10a3bb8776cebb3561"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=fd7ce64087648e10a3bb8776cebb3561^sys_idNOT IN797ce64087648e10a3bb8776cebb3569"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -3753,11 +3687,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:35</sys_created_on>
         <sys_id>3d7ce64087648e10a3bb8776cebb356c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_fd7ce64087648e10a3bb8776cebb3561_sn_auth_token_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:35</sys_updated_on>
         <url/>
@@ -4110,6 +4044,29 @@ if (inputs.status_code == '200'){&#13;
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d7ce64087648e10a3bb8776cebb35b2"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7d7ce64087648e10a3bb8776cebb35b2"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD3d7ce640c1648e109081578f63d2b6af</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>fad7127187d406506c60a9383cbb35dc</scope_name>
+        <serialized_content>{"FlowDesigner:FD3d7ce640c1648e109081578f63d2b6af":{"$COCollectionField":[{"choices_object":{"content_filter_results":{"self_harm":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3e39fa72-ced6-4af2-a3f9-59855b601c5c\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7230c65e-fb16-4d48-a67d-a1568c6f67eb\"}"}},"self_harm.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"self_harm\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f052f1-bd8a-47a4-b831-3e6324b03e42\"}"},"hate":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8f3c7a45-0e7c-4a11-9ffb-d40da40917ec\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf3e5348-b000-4b1c-985e-ae07d656e1d6\"}"}},"hate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"hate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"fb816633-2bd5-47b0-ab46-8e9192f50ccf\"}"},"sexual":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ae582cca-2721-4827-afac-e90c787a9931\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8ff5ed3c-bb28-4789-99f4-9943b124f651\"}"}},"sexual.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"sexual\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4784d6a2-e80f-4899-801b-98233c0f767e\"}"},"violence":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"4b2ae181-af39-4734-b1b6-d2782657ab71\"}"},"filtered":"String","filtered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"filtered\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9b562917-9773-452e-bd72-e77add41e6b9\"}"}},"violence.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violence\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"17cd0b72-d2fa-48b9-94f3-6bac3dd6b68d\"}"}},"content_filter_results.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"content_filter_results\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"350895dd-505d-446a-bffe-29ead0ae1c47\"}"},"finish_reason":"String","finish_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"finish_reason\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"21b9b4b8-b9af-4653-a183-c9c58f103188\"}"},"index":"String","index.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"index\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"34c7de03-0e45-4e75-9be9-8c9030b58ce6\"}"},"message":{"role":"String","role.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"role\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"947ae4ed-865c-443b-b0c3-5986ab9e4872\"}"},"content":"String","content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"content\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1d7cc613-1389-4eac-aa1e-8b4a9e0698e0\"}"}},"message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"f408f70c-5352-4122-8a7d-2b78923d42e8\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"769baac3-3b19-4709-9a22-747d94db604c\",\"default_value\":\"\",\"label\":\"chocies\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"6846b88c-465b-4baa-b98f-74cd331ddcdb\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3d7ce640c1648e109081578f63d2b6af\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3d7ce640c1648e109081578f63d2b6af.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"769baac3-3b19-4709-9a22-747d94db604c\",\"default_value\":\"\",\"label\":\"chocies\",\"mandatory\":\"false\",\"child_name\":\"choices_object\",\"uiUniqueId\":\"6846b88c-465b-4baa-b98f-74cd331ddcdb\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3d7ce640c1648e109081578f63d2b6af\",\"child_label\":\"choices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a05aab72-38e1-47a6-ad2f-15b15bda89cf\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6954a63-8635-4073-b9a6-17bf76f92df1\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>850063547</sys_created_by>
+        <sys_created_on>2024-02-19 13:32:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd7ce64087648e10a3bb8776cebb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>850063547</sys_updated_by>
+        <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4244,7 +4201,7 @@ if (inputs.status_code == '200'){&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=467ce64087648e10a3bb8776cebb35cc^sys_idNOT IN067ce64087648e10a3bb8776cebb35cd,0e7ce64087648e10a3bb8776cebb35cc,827ce64087648e10a3bb8776cebb35cd"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-19 07:02:36 PM">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-19 05:32:36">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=1^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=429</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>OpenAI API quota exceeded</label>
@@ -4258,7 +4215,7 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-19 07:02:36 PM">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-19 05:32:36">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=1^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=400</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>tokens exceeded</label>
@@ -4272,7 +4229,7 @@ if (inputs.status_code == '200'){&#13;
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2024-02-19 07:02:36 PM">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 2024-02-19 05:32:36">467ce64087648e10a3bb8776cebb35cc</action_status_metadata_id>
         <condition>{{step[17ca3925-230d-4c66-a94f-74f21eec9394].error_code}}=3^{{step[17ca3925-230d-4c66-a94f-74f21eec9394].status_code}}=401</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>no API key provided</label>
@@ -4299,11 +4256,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:35</sys_created_on>
         <sys_id>2d7ce64087648e10a3bb8776cebb354a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>prompt</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ed7ce64087648e10a3bb8776cebb3542_prompt_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:35</sys_updated_on>
         <url/>
@@ -4324,11 +4281,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>3d7ce64087648e10a3bb8776cebb35b6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Response</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7ce64087648e10a3bb8776cebb3542_response_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
@@ -4347,11 +4304,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>427ce64087648e10a3bb8776cebb35bf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7ce64087648e10a3bb8776cebb3542___action_status___en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
@@ -4370,11 +4327,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>b17ce64087648e10a3bb8776cebb35bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>chocies</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7ce64087648e10a3bb8776cebb3542_variable_en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
@@ -4393,11 +4350,11 @@ if (inputs.status_code == '200'){&#13;
         <sys_created_on>2024-02-19 13:32:36</sys_created_on>
         <sys_id>ca7ce64087648e10a3bb8776cebb35c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Genpact AI Controller" source="x_ggisu_genpact_ai">fad7127187d406506c60a9383cbb35dc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Genpact AI Controller">fad7127187d406506c60a9383cbb35dc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7ce64087648e10a3bb8776cebb3542___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>850063547</sys_updated_by>
         <sys_updated_on>2024-02-19 13:32:36</sys_updated_on>
         <url/>
